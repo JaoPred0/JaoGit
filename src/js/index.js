@@ -1,6 +1,5 @@
-// 📌 Bootstrap - Framework CSS e JS responsivo
 const scriptBootstrap = document.createElement('script');
-scriptBootstrap.src = 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js';
+scriptBootstrap.src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css';
 document.head.appendChild(scriptBootstrap);
 
 // 🚀 AOS (Animate On Scroll) - Efeitos de animação ao rolar a página
@@ -17,3 +16,4 @@ document.head.appendChild(scriptSwiper);
 scriptAOS.onload = () => {
     AOS.init({ duration: 500 });
 };
+

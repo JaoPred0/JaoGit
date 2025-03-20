@@ -17,7 +17,25 @@
 /* 🎡 Swiper - Biblioteca de carrosséis e sliders */
 @import url('https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css');
 
+/* 🎡 Prism.js para destacar o código    */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css');
+
 /* Mostrar Divs */
+
 .oculto {
     display: none;
+    opacity: 0;
+}
+.fade-in {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

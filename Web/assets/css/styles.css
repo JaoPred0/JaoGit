@@ -1,3 +1,36 @@
 .cursor-pointer {
     cursor: pointer;
 }
+
+/* Estilização do código */
+.code-container {
+    /* Fundo escuro */
+    color: #000000;
+    /* Cor padrão do texto */
+    padding: 15px;
+    border-radius: 5px;
+    font-family: "Courier New", monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Estilização das tags */
+.code-container .tag {
+    color: #ff0000;
+    /* Azul */
+}
+
+.code-container .attribute {
+    color: #3f3182;
+    /* Azul claro */
+}
+
+.code-container .value {
+    color: #0033dc;
+    /* Laranja */
+}
+
+.code-container .text {
+    color: #000000;
+    /* Cinza claro */
+}
