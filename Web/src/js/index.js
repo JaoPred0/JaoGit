@@ -1,8 +1,3 @@
-// 📌 Bootstrap - Framework CSS e JS responsivo
-const scriptBootstrapBundle = document.createElement('script');
-scriptBootstrap.src = 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js';
-document.head.appendChild(scriptBootstrapBundle);
-
 const scriptBootstrap = document.createElement('script');
 scriptBootstrap.src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css';
 document.head.appendChild(scriptBootstrap);

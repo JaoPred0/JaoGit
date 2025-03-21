@@ -34,3 +34,18 @@
     color: #000000;
     /* Cinza claro */
 }
+.offcanvas_show {
+    width: 20% !important;
+}
+.offcanvas_show_list {
+    width: 13% !important;
+}
+
+@media (max-width: 768px) {
+    .offcanvas_show {
+        display: none !important;
+    }
+    .offcanvas_show_list {
+        display: none !important;
+    }
+}
