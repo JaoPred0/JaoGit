@@ -2,77 +2,239 @@
     <!-- Começando -->
     <section>
         <!-- Introdução -->
-        <div class="dm" id="introducao">
-            <h1 class="display-6 fw-medium">Introdução: Crie e Publique Páginas no GitHub com Facilidade!</h1>
-            <p class="fs-5">JaoGit é uma ferramenta prática para criar e publicar sites no <a
-                    href="https://pages.github.com/" target="_blank">GitHub Pages</a> de forma rápida e
-                simplificada.
-                Com modelos prontos e suporte a HTML, CSS e JavaScript, ela facilita o desenvolvimento e aprimora a
-                apresentação das suas páginas no GitHub.</p>
-            <hr>
-            <h3>Início rápido</h3>
-            <p class="fs-5">Comece com o código padrão do <kbd>HTML5</kbd> no arquivo <kbd>index.html</kbd>. No VS Code,
-                digite
-                <kbd>!</kbd> ou <kbd>html:5</kbd> e pressione Enter para gerar a estrutura básica automaticamente. Ou
-                copia a estrutura abaixo.
+        <div class="dm oculto" id="introducao">
+            <!-- Introdução -->
+            <section>
+                <h1 class="display-6 fw-medium">Introdução: Crie e Publique Páginas no GitHub com Facilidade!</h1>
+                <p class="fs-5">JaoGit é uma ferramenta prática para criar e publicar sites no <a
+                        href="https://pages.github.com/" target="_blank">GitHub Pages</a> de forma rápida e
+                    simplificada.
+                    Com modelos prontos e suporte a HTML, CSS e JavaScript, ela facilita o desenvolvimento e aprimora a
+                    apresentação das suas páginas no GitHub.</p>
+                <hr>
+            </section>
+            <!-- Inicio rapido -->
+            <section>
+                <h3>Início rápido</h3>
+                <p class="fs-5">Comece com o código padrão do <kbd>HTML5</kbd> no arquivo <kbd>index.html</kbd>. No VS
+                    Code,
+                    digite
+                    <kbd>!</kbd> ou <kbd>html:5</kbd> e pressione Enter para gerar a estrutura básica automaticamente.
+                    Ou
+                    copia a estrutura abaixo.
+                </p>
+                <!-- Toast de Confirmação -->
+                <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                            <strong class="me-auto">Sucesso!</strong>
+                            <small>Agora</small>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                        <div class="toast-body">
+                            Código copiado com sucesso!
+                        </div>
+                    </div>
+                </div>
+                <!-- code1 -->
+                <div id="container-code1"></div>
+            </section>
+            <!-- Incluido cdn no index -->
+            <section class="mt-3">
+                <h3>Incluindo as CDNs no index.html</h3>
+                <p class="fs-5">Centralizar as CDNs em um único arquivo é uma boa prática para projetos pequenos ou em
+                    fase de teste, pois evita a necessidade de uma estrutura complexa. Abaixo estão as principais CDNs
+                    utilizadas:
+                </p>
+                <div id="container-code2"></div>
+            </section>
+            <!-- Incluindo o principal -->
+            <section class="mt-3">
+                <h3>Links CDN</h3>
+                <p class="fs-5">Aqui estão os link de CDN de referência do JaoGit:
+                </p>
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <table class="table table-bordered table-striped">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>Nome da CDN</th>
+                                        <th>Link</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Bootstrap</td>
+                                        <td><a href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+                                                target="_blank">Abrir</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bootstrap Icons</td>
+                                        <td><a href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+                                                target="_blank">Abrir</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Animate.css</td>
+                                        <td><a href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+                                                target="_blank">Abrir</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>AOS (Animate On Scroll)</td>
+                                        <td><a href="https://unpkg.com/aos@next/dist/aos.css" target="_blank">Abrir</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-6">
+                            <table class="table table-bordered table-striped">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>Nome da CDN</th>
+                                        <th>Link</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Font Awesome</td>
+                                        <td><a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+                                                target="_blank">Abrir</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Google Fonts (Roboto)</td>
+                                        <td><a href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+                                                target="_blank">Abrir</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Swiper</td>
+                                        <td><a href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+                                                target="_blank">Abrir</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Mais Estudos -->
+            <section class="mt-3">
+                <h3>Mais Estudos</h3>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Entenda melhor como tudo funciona.</li>
+                    <li class="list-group-item">Aprenda mais sobre o uso de CDNs.</li>
+                    <li class="list-group-item">
+                        Precisa de mais desempenho? Considere utilizar estruturas avançadas na seção
+                        <a href="#" onclick="mostrarDiv('estrutura')">Introdução/Estrutura</a>.
+                    </li>
+                    <li class="list-group-item">
+                        Quer separar arquivos usando <kbd>/base/</kbd>? Veja como utilizar scripts, construir e
+                        modificar na seção
+                        <a href="#" onclick="mostrarDiv('pageLoad-src')">Src/PageLoad.js</a>.
+                    </li>
+                </ul>
+            </section>
+            <!-- GitHub -->
+            <section class="mt-3">
+                <h1>GitHub da Página</h1>
+                <p class="fs-5">Lá, você encontrará as versões, um resumo das operações e poderá baixar templates ou
+                    bases.</p>
+                <!-- From Uiverse.io by adamgiebl -->
+                <a href="https://github.com/JaoPred0/JaoGit.git" target="_blank">
+                    <button class="cssbuttons-io">
+                        <span><i class="bi bi-github"></i>Acessar GitHub</span>
+                    </button>
+                </a>
+
+            </section>
+            <br><br><br><br><br>
+        </div>
+
+    </section>
+
+    <!-- Estrutura -->
+    <div class="dm" id="estrutura">
+        <h1></h1>
+        <h1 class="display-6 fw-medium">Estrutura: Descubra o que está incluído no JaoGit.</h1>
+        <p class="fs-5">
+            As estruturas auxiliam na organização e na busca por arquivos, cada uma com seu propósito específico, como
+            <kbd>assets</kbd> e <kbd>base</kbd>. Cada diretório contém elementos essenciais, e futuramente novas
+            implementações
+            facilitarão a criação de projetos e o upload no GitHub Pages.
+        </p>
+        <hr>
+        <!-- Assets -->
+        <section class="mt-3">
+            <h3>Assets: Área de CSS, scripts e outros recursos globais</h3>
+            <p class="fs-5">
+                A pasta <kbd>assets</kbd> contém diretórios fixos, como <kbd>css/styles.css</kbd> e
+                <kbd>js/scripts.js</kbd>.
+                No entanto, é possível adicionar outros arquivos globais, como imagens (<kbd>img/banner.png</kbd>),
+                ícones
+                (<kbd>icon/home.png</kbd>) e vetores SVG (<kbd>svg/world.svg</kbd>), facilitando a organização e
+                reutilização dos recursos.
             </p>
             <div class="card">
+                <div class="card-header fw-medium">
+                    Estrutura de Diretórios
+                </div>
                 <div class="card-body">
-                    <pre class="code-container">
-<span class="tag">&lt;!DOCTYPE html&gt;</span>
-<span class="tag">&lt;html</span> <span class="attribute">lang=</span><span class="value">"pt-br"</span><span class="tag">&gt;</span>
-<span class="tag">&lt;head&gt;</span>
-    <span class="tag">&lt;meta</span> <span class="attribute">charset=</span><span class="value">"UTF-8"</span><span class="tag">&gt;</span>
-    <span class="tag">&lt;meta</span> <span class="attribute">name=</span><span class="value">"viewport"</span> <span class="attribute">content=</span><span class="value">"width=device-width, initial-scale=1.0"</span><span class="tag">&gt;</span>
-    <span class="tag">&lt;title&gt;</span><span class="text">JaoGit</span><span class="tag">&lt;/title&gt;</span>
-<span class="tag">&lt;/head&gt;</span>
-<span class="tag">&lt;body&gt;</span>
-    <span class="tag">&lt;h1&gt;</span><span class="text">Hello, world!</span><span class="tag">&lt;/h1&gt;</span>
-<span class="tag">&lt;/body&gt;</span>
-<span class="tag">&lt;/html&gt;</span>
-                </pre>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-folder-fill text-warning"></i> <strong>assets</strong></li>
+                        <ul class="ms-4 list-unstyled">
+                            <li><i class="bi bi-folder-fill text-warning"></i> css</li>
+                            <ul class="ms-4 list-unstyled">
+                                <li><i class="bi bi-file-earmark-code-fill text-primary"></i> styles.css</li>
+                            </ul>
+                            <li><i class="bi bi-folder-fill text-warning"></i> js</li>
+                            <ul class="ms-4 list-unstyled">
+                                <li><i class="bi bi-file-earmark-code-fill text-primary"></i> scripts.js</li>
+                            </ul>
+                        </ul>
+                    </ul>
                 </div>
             </div>
+        </section>
+        <!-- Base -->
+        <section class="mt-3">
 
-            <!-- Estrutura -->
-            <div class="dm oculto" id="estrutura">
-                <h1>Estrutura</h1>
-            </div>
+        </section>
+    </div>
 
-            <!-- Html -->
-            <div class="dm oculto" id="html">
-                <h1>Html</h1>
-            </div>
+    <!-- Html -->
+    <div class="dm oculto" id="html">
+        <h1>Html</h1>
+    </div>
 
-            <!-- Css -->
-            <div class="dm oculto" id="css">
-                <h1>Css</h1>
-            </div>
+    <!-- Css -->
+    <div class="dm oculto" id="css">
+        <h1>Css</h1>
+    </div>
 
-            <!-- JavaScript -->
-            <div class="dm oculto" id="js">
-                <h1>JavaScript</h1>
-            </div>
+    <!-- JavaScript -->
+    <div class="dm oculto" id="js">
+        <h1>JavaScript</h1>
+    </div>
 
-            <!-- Arquivos -->
-            <div class="dm oculto" id="arquivos">
-                <h1>Arquivos</h1>
-            </div>
+    <!-- Arquivos -->
+    <div class="dm oculto" id="arquivos">
+        <h1>Arquivos</h1>
+    </div>
 
-            <!-- Assets -->
-            <div class="dm oculto" id="assets">
-                <h1>Assets</h1>
-            </div>
+    <!-- Assets -->
+    <div class="dm oculto" id="assets">
+        <h1>Assets</h1>
+    </div>
 
-            <!-- Base -->
-            <div class="dm oculto" id="base">
-                <h1>Base</h1>
-            </div>
+    <!-- Base -->
+    <div class="dm oculto" id="base">
+        <h1>Base</h1>
+    </div>
 
-            <!-- Src -->
-            <div class="dm oculto" id="src">
-                <h1>Src</h1>
-            </div>
+    <!-- Src -->
+    <div class="dm oculto" id="src">
+        <h1>Src</h1>
+    </div>
     </section>
 
     <!-- Src -->
