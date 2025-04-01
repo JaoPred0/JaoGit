@@ -153,8 +153,7 @@
     </section>
 
     <!-- Estrutura -->
-    <div class="dm" id="estrutura">
-        <h1></h1>
+    <div class="dm oculto" id="estrutura">
         <h1 class="display-6 fw-medium">Estrutura: Descubra o que está incluído no JaoGit.</h1>
         <p class="fs-5">
             As estruturas auxiliam na organização e na busca por arquivos, cada uma com seu propósito específico, como
@@ -197,13 +196,88 @@
         </section>
         <!-- Base -->
         <section class="mt-3">
+            <h3>Base: Estrutura Central da Página HTML</h3>
+            <p class="fs-5">
+                A pasta <kbd>base</kbd> contém os <kbd>arquivos.html</kbd>, responsáveis pela organização e estruturação
+                do conteúdo da página.
+            </p>
+            <div class="card">
+                <div class="card-header fw-medium">
+                    Estrutura de Diretórios
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-folder-fill text-warning"></i> <strong>base</strong></li>
+                        <ul class="ms-4 list-unstyled">
+                            <li><i class="bi bi-file-earmark-code-fill text-primary"></i> arquivo.html</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
+        <section class="mt-3">
+            <h3>Src: Área de Configuração de Scripts e Estilos</h3>
+            <p class="fs-5">
+                A pasta <kbd>src</kbd> contém diretórios essenciais para os arquivos de estilo e scripts, como
+                <kbd>css/index.css</kbd> e <kbd>js/index.js</kbd>.
+                Embora seja possível adicionar ou remover arquivos conforme necessário, essa pasta é fundamental para a
+                configuração e funcionamento da aplicação.
+            </p>
+            <div class="card">
+                <div class="card-header fw-medium">
+                    Estrutura de Diretórios
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-folder-fill text-warning"></i> <strong>src</strong></li>
+                        <ul class="ms-4 list-unstyled">
+                            <li><i class="bi bi-folder-fill text-warning"></i> css</li>
+                            <ul class="ms-4 list-unstyled">
+                                <li><i class="bi bi-file-earmark-code-fill text-primary"></i> index.css</li>
+                            </ul>
+                            <li><i class="bi bi-folder-fill text-warning"></i> js</li>
+                            <ul class="ms-4 list-unstyled">
+                                <li><i class="bi bi-file-earmark-code-fill text-primary"></i> index.js</li>
+                                <li><i class="bi bi-file-earmark-code-fill text-primary"></i> mostrarDiv.js</li>
+                                <li><i class="bi bi-file-earmark-code-fill text-primary"></i> pageLoad.js</li>
+                            </ul>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+            <br><br><br>
         </section>
     </div>
 
     <!-- Html -->
-    <div class="dm oculto" id="html">
-        <h1>Html</h1>
+    <div class="dm" id="html">
+        <h1 class="display-6 fw-medium">HTML: Estrutura do index.html</h1>
+        <p class="fs-5">
+            O arquivo <kbd>index.html</kbd> segue uma estrutura padrão dentro do projeto.
+            No entanto, ao adicionar novos arquivos, como <kbd>admin.html</kbd> e <kbd>dashboard.html</kbd>,
+            é importante manter a organização e o mesmo padrão estrutural.
+        </p>
+        <hr>
+        <section>
+            <h3>index.html</h3>
+            <p class="fs-5">Copie o código ou siga o padrão de sua preferência.</p>
+            <!-- Toast de Confirmação -->
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                        <strong class="me-auto">Sucesso!</strong>
+                        <small>Agora</small>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                        Código copiado com sucesso!
+                    </div>
+                </div>
+            </div>
+            <!-- code1 -->
+            <div id="container-code3"></div>
+        </section>
     </div>
 
     <!-- Css -->

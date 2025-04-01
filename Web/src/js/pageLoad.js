@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const elementosCode = [
         { arquivo: 'code1', container: 'container-code1' },
         { arquivo: 'code2', container: 'container-code2' },
+        { arquivo: 'code3', container: 'container-code3' },
     ]
     elementos.forEach(item => carregarConteudo(item.arquivo, item.container));
     elementosCode.forEach(item => carregarConteudo(item.arquivo, item.container));
