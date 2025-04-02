@@ -12,6 +12,11 @@ const scriptSwiper = document.createElement('script');
 scriptSwiper.src = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js';
 document.head.appendChild(scriptSwiper);
 
+// Prism.js para destacar o código
+const Prism = document.createElement('script');
+Prism.src = 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js';
+document.head.appendChild(Prism);
+
 // 🔄 Inicializar AOS após o carregamento do script
 scriptAOS.onload = () => {
     AOS.init({ duration: 500 });

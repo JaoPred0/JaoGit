@@ -1,0 +1,557 @@
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <strong class="me-auto">Sucesso!</strong>
+            <small>Agora</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            Código copiado com sucesso!
+        </div>
+    </div>
+</div>
+</div>
+<!-- Começando -->
+<div class="container dm" id="introducao">
+    <section>
+        <!-- Introdução -->
+        <div class="">
+            <!-- Introdução -->
+            <section>
+                <h1 class="display-6 fw-medium">Introdução: Crie e Publique Páginas no GitHub com Facilidade!</h1>
+                <p class="fs-5">JaoGit é uma ferramenta prática para criar e publicar sites no <a
+                        href="https://pages.github.com/" target="_blank">GitHub Pages</a> de forma rápida e
+                    simplificada.
+                    Com modelos prontos e suporte a HTML, CSS e JavaScript, ela facilita o desenvolvimento e aprimora a
+                    apresentação das suas páginas no GitHub.</p>
+                <hr>
+            </section>
+            <!-- Inicio rapido -->
+            <section>
+                <h3>Início rápido</h3>
+                <p class="fs-5">Comece com o código padrão do <kbd>HTML5</kbd> no arquivo <kbd>index.html</kbd>. No VS
+                    kbd,
+                    digite
+                    <kbd>!</kbd> ou <kbd>html:5</kbd> e pressione Enter para gerar a estrutura básica automaticamente.
+                    Ou
+                    copia a estrutura abaixo.
+                </p>
+        </div>
+        <!-- kbd1 -->
+        <div id="container-code1"></div>
+    </section>
+    <!-- Incluido cdn no index -->
+    <section class="mt-3">
+        <h3>Incluindo as CDNs no index.html</h3>
+        <p class="fs-5">Centralizar as CDNs em um único arquivo é uma boa prática para projetos pequenos ou em
+            fase de teste, pois evita a necessidade de uma estrutura complexa. Abaixo estão as principais CDNs
+            utilizadas:
+        </p>
+        <div id="container-code2"></div>
+    </section>
+    <!-- Incluindo o principal -->
+    <section class="mt-3">
+        <h3>Links CDN</h3>
+        <p class="fs-5">Aqui estão os link de CDN de referência do JaoGit:
+        </p>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <table class="table table-bordered table-striped">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Nome da CDN</th>
+                                <th>Link</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bootstrap</td>
+                                <td><a href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+                                        target="_blank">Abrir</a></td>
+                            </tr>
+                            <tr>
+                                <td>Bootstrap Icons</td>
+                                <td><a href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+                                        target="_blank">Abrir</a></td>
+                            </tr>
+                            <tr>
+                                <td>Animate.css</td>
+                                <td><a href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+                                        target="_blank">Abrir</a></td>
+                            </tr>
+                            <tr>
+                                <td>AOS (Animate On Scroll)</td>
+                                <td><a href="https://unpkg.com/aos@next/dist/aos.css" target="_blank">Abrir</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <table class="table table-bordered table-striped">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Nome da CDN</th>
+                                <th>Link</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Font Awesome</td>
+                                <td><a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+                                        target="_blank">Abrir</a></td>
+                            </tr>
+                            <tr>
+                                <td>Google Fonts (Roboto)</td>
+                                <td><a href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+                                        target="_blank">Abrir</a></td>
+                            </tr>
+                            <tr>
+                                <td>Swiper</td>
+                                <td><a href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+                                        target="_blank">Abrir</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Mais Estudos -->
+    <section class="mt-3">
+        <h3>Mais Estudos</h3>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Entenda melhor como tudo funciona.</li>
+            <li class="list-group-item">Aprenda mais sobre o uso de CDNs.</li>
+            <li class="list-group-item">
+                Precisa de mais desempenho? Considere utilizar estruturas avançadas na seção
+                <a href="#" onclick="mostrarDiv('estrutura')">Introdução/Estrutura</a>.
+            </li>
+            <li class="list-group-item">
+                Quer separar arquivos usando <kbd>/base/</kbd>? Veja como utilizar scripts, construir e
+                modificar na seção
+                <a href="#" onclick="mostrarDiv('pageLoad-src')">Src/PageLoad.js</a>.
+            </li>
+        </ul>
+    </section>
+    <!-- GitHub -->
+    <section class="mt-3">
+        <h1>GitHub da Página</h1>
+        <p class="fs-5">Lá, você encontrará as versões, um resumo das operações e poderá baixar templates ou
+            bases.</p>
+        <!-- From Uiverse.io by adamgiebl -->
+        <a href="https://github.com/JaoPred0/JaoGit.git" target="_blank">
+            <button class="cssbuttons-io">
+                <span><i class="bi bi-github"></i>Acessar GitHub</span>
+            </button>
+        </a>
+
+    </section>
+    <br><br><br><br><br>
+</div>
+
+<!-- Estrutura -->
+<div class="dm oculto" id="estrutura">
+    <h1 class="display-6 fw-medium">Estrutura: Descubra o que está incluído no JaoGit.</h1>
+    <p class="fs-5">
+        As estruturas auxiliam na organização e na busca por arquivos, cada uma com seu propósito específico, como
+        <kbd>assets</kbd> e <kbd>base</kbd>. Cada diretório contém elementos essenciais, e futuramente novas
+        implementações
+        facilitarão a criação de projetos e o upload no GitHub Pages.
+    </p>
+    <hr>
+    <!-- Assets -->
+    <section class="mt-3">
+        <h3>Assets: Área de CSS, scripts e outros recursos globais</h3>
+        <p class="fs-5">
+            A pasta <kbd>assets</kbd> contém diretórios fixos, como <kbd>css/styles.css</kbd> e
+            <kbd>js/scripts.js</kbd>.
+            No entanto, é possível adicionar outros arquivos globais, como imagens (<kbd>img/banner.png</kbd>),
+            ícones
+            (<kbd>icon/home.png</kbd>) e vetores SVG (<kbd>svg/world.svg</kbd>), facilitando a organização e
+            reutilização dos recursos.
+        </p>
+        <div class="card">
+            <div class="card-header fw-medium">
+                Estrutura de Diretórios
+            </div>
+            <div class="card-body">
+                <ul class="list-unstyled">
+                    <li><i class="bi bi-folder-fill text-warning"></i> <strong>assets</strong></li>
+                    <ul class="ms-4 list-unstyled">
+                        <li><i class="bi bi-folder-fill text-warning"></i> css</li>
+                        <ul class="ms-4 list-unstyled">
+                            <li><i class="bi bi-file-earmark-kbd-fill text-primary"></i> styles.css</li>
+                        </ul>
+                        <li><i class="bi bi-folder-fill text-warning"></i> js</li>
+                        <ul class="ms-4 list-unstyled">
+                            <li><i class="bi bi-file-earmark-kbd-fill text-primary"></i> scripts.js</li>
+                        </ul>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Base -->
+    <section class="mt-3">
+        <h3>Base: Estrutura Central da Página HTML</h3>
+        <p class="fs-5">
+            A pasta <kbd>base</kbd> contém os <kbd>arquivos.html</kbd>, responsáveis pela organização e estruturação
+            do conteúdo da página.
+        </p>
+        <div class="card">
+            <div class="card-header fw-medium">
+                Estrutura de Diretórios
+            </div>
+            <div class="card-body">
+                <ul class="list-unstyled">
+                    <li><i class="bi bi-folder-fill text-warning"></i> <strong>base</strong></li>
+                    <ul class="ms-4 list-unstyled">
+                        <li><i class="bi bi-file-earmark-kbd-fill text-primary"></i> arquivo.html</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-3">
+        <h3>Src: Área de Configuração de Scripts e Estilos</h3>
+        <p class="fs-5">
+            A pasta <kbd>src</kbd> contém diretórios essenciais para os arquivos de estilo e scripts, como
+            <kbd>css/index.css</kbd> e <kbd>js/index.js</kbd>.
+            Embora seja possível adicionar ou remover arquivos conforme necessário, essa pasta é fundamental para a
+            configuração e funcionamento da aplicação.
+        </p>
+        <div class="card">
+            <div class="card-header fw-medium">
+                Estrutura de Diretórios
+            </div>
+            <div class="card-body">
+                <ul class="list-unstyled">
+                    <li><i class="bi bi-folder-fill text-warning"></i> <strong>src</strong></li>
+                    <ul class="ms-4 list-unstyled">
+                        <li><i class="bi bi-folder-fill text-warning"></i> css</li>
+                        <ul class="ms-4 list-unstyled">
+                            <li><i class="bi bi-file-earmark-kbd-fill text-primary"></i> index.css</li>
+                        </ul>
+                        <li><i class="bi bi-folder-fill text-warning"></i> js</li>
+                        <ul class="ms-4 list-unstyled">
+                            <li><i class="bi bi-file-earmark-kbd-fill text-primary"></i> index.js</li>
+                            <li><i class="bi bi-file-earmark-kbd-fill text-primary"></i> mostrarDiv.js</li>
+                            <li><i class="bi bi-file-earmark-kbd-fill text-primary"></i> pageLoad.js</li>
+                        </ul>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <br><br><br>
+    </section>
+</div>
+
+<!-- Html -->
+<div class="dm oculto" id="html">
+    <h1 class="display-6 fw-medium">HTML: Estrutura do index.html</h1>
+    <p class="fs-5">
+        O arquivo <kbd>index.html</kbd> segue uma estrutura padrão dentro do projeto.
+        No entanto, ao adicionar novos arquivos, como <kbd>admin.html</kbd> e <kbd>dashboard.html</kbd>,
+        é importante manter a organização e o mesmo padrão estrutural.
+    </p>
+    <hr>
+    <section>
+        <h3>index.html</h3>
+        <p class="fs-5">Copie o código ou siga o padrão de sua preferência.</p>
+        <!-- Toast de Confirmação -->
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto">Sucesso!</strong>
+                    <small>Agora</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    Código copiado com sucesso!
+                </div>
+            </div>
+        </div>
+        <!-- kbd3 -->
+        <div id="container-code3"></div>
+    </section>
+</div>
+
+<!-- Css -->
+<div class="dm oculto" id="css">
+    <h1 class="display-6 fw-medium">Css: Uso do assets/css e src/css</h1>
+    <p class="fs-5">
+        O arquivo <kbd>styles.css</kbd> é o principal arquivo CSS do projeto, localizado na pasta <kbd>assets/css</kbd>.
+        Ele contém estilos globais e pode ser modificado conforme necessário. Além disso, o arquivo <kbd>index.css</kbd>
+        na pasta <kbd>src/css</kbd> é utilizado para personalizações específicas do projeto.
+        É importante manter a organização e a separação de estilos para facilitar a manutenção e o desenvolvimento
+        futuro.
+    </p>
+    <hr>
+    <section>
+        <h3>assets/css/styles.css</h3>
+        <p class="fs-5">
+            O estilo global é aplicado através do arquivo <kbd>styles.css</kbd>, localizado na pasta
+            <kbd>assets/css</kbd>.
+            Ele contém definições de estilo que afetam toda a aplicação, garantindo consistência visual e facilitando a
+            manutenção.
+            Utilize este arquivo para definir cores, fontes, espaçamentos e outros elementos que serão compartilhados em
+            várias partes do projeto.
+        </p>
+        </p>
+    </section>
+    <!-- kbd4 -->
+    <div id="container-code4"></div>
+
+    <section class="mt-3">
+        <h3>assets/src/css/index.css</h3>
+        <p class="fs-5">
+            O arquivo <kbd>index.css</kbd>, localizado na pasta <kbd>src/css</kbd>, contém estilos pré-configurados e
+            prontos para uso dinâmico. Ele foi projetado para facilitar a integração com scripts específicos do projeto,
+            permitindo uma personalização eficiente e rápida. Além disso, o arquivo inclui suporte para CDNs prontas,
+            oferecendo uma base sólida para o uso pessoal e garantindo compatibilidade com os principais recursos e
+            bibliotecas utilizadas no projeto. Utilize este arquivo para estilizar elementos dinâmicos e integrar
+            funcionalidades de forma prática e organizada.
+        </p>
+        </p>
+    </section>
+    <div id="container-code5"></div>
+    <section class="mt-3">
+        <h3>Cdn's do src/css</h3>
+        <p class="fs-5 ">
+            Abaixo estão algumas das principais bibliotecas e frameworks utilizados no projeto. Elas foram escolhidas
+            para
+            proporcionar uma experiência de desenvolvimento mais eficiente e para garantir a criação de interfaces
+            modernas e
+            responsivas. Confira a lista e explore as possibilidades que cada uma oferece:
+        </p>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <strong>📌 Bootstrap:</strong> Um framework CSS responsivo que facilita a criação de layouts modernos e
+                adaptáveis.
+            </li>
+            <li class="list-group-item">
+                <strong>📌 Bootstrap Icons:</strong> Um conjunto de ícones vetoriais para uso em projetos web, integrado
+                ao Bootstrap.
+            </li>
+            <li class="list-group-item">
+                <strong>🎯 Animate.css:</strong> Uma biblioteca de animações CSS prontas para uso, ideal para adicionar
+                efeitos visuais.
+            </li>
+            <li class="list-group-item">
+                <strong>🚀 AOS (Animate On Scroll):</strong> Uma biblioteca que adiciona animações ao rolar a página,
+                criando efeitos dinâmicos.
+            </li>
+            <li class="list-group-item">
+                <strong>🔥 Font Awesome:</strong> Uma coleção de ícones personalizáveis para uso em projetos web e
+                aplicativos.
+            </li>
+            <li class="list-group-item">
+                <strong>🖋️ Google Fonts (Roboto):</strong> Uma fonte estilizada e amplamente utilizada para melhorar a
+                tipografia de projetos.
+            </li>
+            <li class="list-group-item">
+                <strong>🎡 Swiper:</strong> Uma biblioteca para criar carrosséis e sliders interativos e responsivos.
+            </li>
+        </ul>
+    </section>
+    <section class="mt-3">
+        <h3>Mostrar Div</h3>
+        <p class="fs-5">
+            O código abaixo demonstra como ocultar e exibir elementos HTML utilizando classes CSS e animações. A classe
+            <kbd>.oculto</kbd> é usada para esconder elementos, enquanto a classe <kbd>.fade-in</kbd> aplica uma
+            animação de
+            transição suave para exibi-los.
+        </p>
+    </section>
+    <br><br><br>
+
+</div>
+
+<!-- JavaScript -->
+<div class="dm oculto" id="js">
+    <h1>JavaScript</h1>
+    <p class="fs-5">
+        O arquivo <kbd>index.js</kbd> é o principal arquivo JavaScript do projeto, localizado na pasta
+        <kbd>src/js</kbd>.
+        Ele contém a lógica de funcionamento do projeto e pode ser modificado conforme necessário. Além disso, o
+        arquivo
+        <kbd>mostrarDiv.js</kbd> é utilizado para ocultar e exibir elementos HTML dinamicamente. É importante manter a
+        organização e a separação de responsabilidades entre os arquivos para facilitar a manutenção e o desenvolvimento
+        futuro. O arquivo <kbd>pageLoad.js</kbd>, por sua vez, é responsável por carregar dinamicamente o conteúdo da
+        página, otimizando a experiência do usuário e reduzindo o tempo de carregamento inicial. Certifique-se de
+        documentar bem o código para que outros desenvolvedores possam entender e colaborar no projeto de forma
+        eficiente.
+        <hr>
+    <section>
+        <h3>index.js</h3>
+        <p class="fs-5">Este código adiciona dinamicamente bibliotecas ao documento para melhorar a experiência do
+            usuário. Veja a explicação de cada uma:</p>
+
+        <ul class="list-group mb-3">
+            <li class="list-group-item"><strong>Bootstrap:</strong> Importa o framework CSS para facilitar a estilização
+                da página.</li>
+            <li class="list-group-item"><strong>AOS (Animate On Scroll):</strong> Biblioteca que adiciona efeitos de
+                animação quando o usuário
+                rola a página.</li>
+            <li class="list-group-item"><strong>Swiper:</strong> Utilizado para criar carrosséis e sliders interativos.
+            </li>
+            <li class="list-group-item"><strong>Prism.js:</strong> Biblioteca para destacar a sintaxe de código dentro
+                da página.</li>
+        </ul>
+        <div id="container-code6"></div>
+        <p class="fs-5 mt-3">Além disso, o código inicializa automaticamente o AOS após seu carregamento para garantir
+            que as
+            animações funcionem corretamente.</p>
+    </section>
+    <div id="container-code6"></div>
+    <section class="mt-3">
+        <h3>MostrarDiv.js</h3>
+        <p class="fs-5">A função <kbd>mostrarDiv(id)</kbd> tem como objetivo exibir uma div específica enquanto oculta
+            todas as outras que possuem a classe <kbd>.dm</kbd>.</p>
+
+        <p class="fs-5">1. <strong>Selecionando todas as divs</strong><br>
+            O código usa <kbd>document.querySelectorAll('.dm')</kbd> para capturar todas as divs que possuem a classe
+            <kbd>.dm</kbd>.
+        </p>
+
+        <p class="fs-5">2. <strong>Ocultando todas as divs</strong><br>
+            Com um <kbd>forEach</kbd>, ele percorre cada div encontrada, adiciona a classe <kbd>oculto</kbd> para
+            escondê-la e remove a classe <kbd>fade-in</kbd> para evitar animações antigas.</p>
+
+        <p class="fs-5">3. <strong>Exibindo a div desejada</strong><br>
+            A função obtém a div correspondente ao <kbd>id</kbd> passado como parâmetro e remove a classe
+            <kbd>oculto</kbd>, tornando-a visível.
+        </p>
+
+        <p class="fs-5">4. <strong>Adicionando animação</strong><br>
+            Após um pequeno atraso de 10 milissegundos, a classe <kbd>fade-in</kbd> é adicionada para criar um efeito
+            suave de aparecimento.</p>
+
+        <p class="fs-5">Esse código permite alternar entre diferentes seções da página, garantindo que apenas uma div
+            seja mostrada por vez, com uma transição suave.</p>
+        <div id="container-code7"></div>
+    </section>
+    <section class="mt-3">
+        <h3>PageLoad.js</h3>
+        <p class="fs-5">
+            Este código aguarda o carregamento do DOM para executar uma função que carrega dinamicamente conteúdos HTML
+            em diferentes seções da página. A função recebe um nome de arquivo e um identificador de contêiner, monta o
+            caminho correto do arquivo dentro de uma pasta específica e usa <kbd>fetch()</kbd> para buscá-lo. Se a resposta for
+            bem-sucedida, o conteúdo é inserido no elemento correspondente; caso contrário, exibe um aviso ou erro no
+            console. Em seguida, uma lista de elementos contendo arquivos e contêineres é percorrida, garantindo que
+            cada seção da página seja preenchida automaticamente com seu respectivo conteúdo.
+        </p>
+        <div id="container-code8"></div>
+</div>
+
+<!-- Arquivos -->
+<div class="dm oculto" id="arquivos">
+    <h1>Arquivos</h1>
+</div>
+
+<!-- Assets -->
+<div class="dm oculto" id="assets">
+    <h1>Assets</h1>
+</div>
+
+<!-- Base -->
+<div class="dm oculto" id="base">
+    <h1>Base</h1>
+</div>
+
+<!-- Src -->
+<div class="dm oculto" id="src">
+    <h1>Src</h1>
+</div>
+</section>
+
+<!-- Src -->
+<section>
+    <!-- Css -->
+    <div class="dm oculto" id="css-src">
+        <h1>Css</h1>
+    </div>
+
+    <!-- Index.js -->
+    <div class="dm oculto" id="index-src">
+        <h1>Index.js</h1>
+    </div>
+
+    <!-- MostrarDiv.js -->
+    <div class="dm oculto" id="mostrarDiv-src">
+        <h1>MostrarDiv.js</h1>
+    </div>
+
+    <!-- PageLoad.js -->
+    <div class="dm oculto" id="pageLoad-src">
+        <h1>PageLoad.js</h1>
+    </div>
+</section>
+
+<!-- Assets -->
+<section>
+    <!-- Css -->
+    <div class="dm oculto" id="css-assets">
+        <h1>Css</h1>
+    </div>
+
+    <!-- Index.js -->
+    <div class="dm oculto" id="js-assets">
+        <h1>Js</h1>
+    </div>
+
+    <!-- Ideias -->
+    <div class="dm oculto" id="ideias-assets">
+        <h1>Ideias</h1>
+    </div>
+
+    <!-- Conteúdo Bases -->
+    <div class="dm oculto" id="conteudo-assets">
+        <h1>Conteúdo Bases</h1>
+    </div>
+</section>
+
+<!-- Base e Src -->
+<section>
+    <!-- Estrutura a mais -->
+    <div class="dm oculto" id="estrutura">
+        <h1>Estrutura a mais</h1>
+    </div>
+</section>
+
+<!-- Sobre -->
+<section>
+    <!-- Cdn -->
+    <div class="dm oculto" id="cdn">
+        <h1>Cdn</h1>
+    </div>
+
+    <!-- Funcionamento -->
+    <div class="dm oculto" id="funcionamento">
+        <h1>Funcionamento</h1>
+    </div>
+
+    <!-- Versão -->
+    <div class="dm oculto" id="versao">
+        <h1>Versão</h1>
+    </div>
+
+    <!-- GitHub -->
+    <div class="dm oculto" id="github">
+        <h1>GitHub</h1>
+    </div>
+
+    <!-- Instagram -->
+    <div class="dm oculto" id="instagram">
+        <h1>Instagram</h1>
+    </div>
+
+    <!-- Publicação GitHub -->
+    <div class="dm oculto" id="publicacao">
+        <h1>Publicação GitHub</h1>
+    </div>
+</section>
+</div>

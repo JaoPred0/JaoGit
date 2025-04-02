@@ -1,0 +1,28 @@
+<div class="card">
+    <div class="card-body">
+        <div
+            class="container w-100 d-flex justify-content-between align-items-center border-bottom border-secondary-subtle">
+            <p class="font-monospace m-0">mostrarDiv</p>
+            <button class="btn" onclick="copyCode(this)" data-target="codeBlock7" title="Copiar código">
+                <i class="bi bi-copy"></i>
+            </button>
+        </div>
+        <pre class="code-container font-monospace" id="codeBlock7">
+<span class="attribute">function</span> <span class="function">mostrarDiv</span>(id) {
+    <span class="attribute">let</span> divs = document.querySelectorAll(<span class="value">'.dm'</span>);
+
+    divs.forEach(div => {
+        div.classList.add(<span class="value">'oculto'</span>);
+        div.classList.remove(<span class="value">'fade-in'</span>);
+    });
+
+    <span class="attribute">let</span> divAtiva = document.getElementById(id);
+    divAtiva.classList.remove(<span class="value">'oculto'</span>);
+
+    setTimeout(() => {
+        divAtiva.classList.add(<span class="value">'fade-in'</span>);
+    }, <span class="number">10</span>);
+}
+</pre>
+    </div>
+</div>

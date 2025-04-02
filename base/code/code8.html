@@ -1,0 +1,41 @@
+<!-- Code 4 -->
+<div class="card">
+    <div class="card-body">
+        <div class="container w-100 d-flex justify-content-between align-items-center border-bottom border-secondary-subtle">
+            <p class="font-monospace m-0">script.js</p>
+            <button class="btn" onclick="copyCode(this)" data-target="codeBlock8" title="Copiar código">
+                <i class="bi bi-copy"></i>
+            </button>
+        </div>
+        <pre class="code-container font-monospace" id="codeBlock8">
+<span class="keyword">&lt;script&gt;</span>
+<span class="function">document.addEventListener</span>(<span class="string">"DOMContentLoaded"</span>, () =&gt; {
+    <span class="keyword">function</span> <span class="function">carregarConteudo</span>(<span class="variable">arquivo</span>, <span class="variable">container</span>) {
+        <span class="keyword">const</span> <span class="variable">caminho</span> = <span class="string">`base/${arquivo}.html`</span>; 
+        
+        <span class="function">fetch</span>(<span class="variable">caminho</span>)
+            .<span class="function">then</span>(<span class="variable">response</span> =&gt; {
+                <span class="keyword">if</span> (!<span class="variable">response</span>.<span class="property">ok</span>) <span class="keyword">throw</span> <span class="keyword">new</span> <span class="class">Error</span>(<span class="string">`Erro HTTP! Status: ${response.status}`</span>);
+                <span class="keyword">return</span> <span class="variable">response</span>.<span class="function">text</span>();
+            })
+            .<span class="function">then</span>(<span class="variable">html</span> =&gt; {
+                <span class="keyword">const</span> <span class="variable">elemento</span> = <span class="function">document.getElementById</span>(<span class="variable">container</span>);
+                <span class="keyword">if</span> (<span class="variable">elemento</span>) {
+                    <span class="variable">elemento</span>.<span class="property">innerHTML</span> = <span class="variable">html</span>;
+                } <span class="keyword">else</span> {
+                    <span class="function">console.warn</span>(<span class="string">`Elemento com ID "${container}" não encontrado.`</span>);
+                }
+            })
+            .<span class="function">catch</span>(<span class="variable">error</span> =&gt; <span class="function">console.error</span>(<span class="string">`Erro ao carregar ${caminho}:`</span>, <span class="variable">error</span>));
+    }
+
+    <span class="keyword">const</span> <span class="variable">elementos</span> = [
+        { <span class="variable">arquivo</span>: <span class="string">'nome_arquivo'</span>, <span class="variable">container</span>: <span class="string">'container-nome'</span> },
+    ];
+
+    <span class="variable">elementos</span>.<span class="function">forEach</span>(<span class="variable">item</span> =&gt; <span class="function">carregarConteudo</span>(<span class="variable">item</span>.<span class="property">arquivo</span>, <span class="variable">item</span>.<span class="property">container</span>));
+});
+<span class="keyword">&lt;/script&gt;</span>
+        </pre>
+    </div>
+</div>

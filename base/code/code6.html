@@ -1,0 +1,37 @@
+<!-- Code 5 -->
+<div class="card">
+    <div class="card-body">
+        <div class="container w-100 d-flex justify-content-between align-items-center border-bottom border-secondary-subtle">
+            <p class="font-monospace m-0">index.js</p>
+            <button class="btn" onclick="copyCode(this)" data-target="codeBlock6" title="Copiar código">
+                <i class="bi bi-copy"></i>
+            </button>
+        </div>
+        <pre class="code-container font-monospace" id="codeBlock6">
+<span class="coment">// 📌 Adicionando Bootstrap</span>
+<span class="attribute">const</span> scriptBootstrap = document.createElement(<span class="value">'script'</span>);
+scriptBootstrap.src = <span class="value">'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css'</span>;
+document.head.appendChild(scriptBootstrap);
+
+<span class="coment">// 🚀 AOS (Animate On Scroll) - Efeitos de animação ao rolar a página</span>
+<span class="attribute">const</span> scriptAOS = document.createElement(<span class="value">'script'</span>);
+scriptAOS.src = <span class="value">'https://unpkg.com/aos@next/dist/aos.js'</span>;
+document.head.appendChild(scriptAOS);
+
+<span class="coment">// 🎡 Swiper - Biblioteca para criação de carrosséis e sliders</span>
+<span class="attribute">const</span> scriptSwiper = document.createElement(<span class="value">'script'</span>);
+scriptSwiper.src = <span class="value">'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js'</span>;
+document.head.appendChild(scriptSwiper);
+
+<span class="coment">// Prism.js para destacar o código</span>
+<span class="attribute">const</span> Prism = document.createElement(<span class="value">'script'</span>);
+Prism.src = <span class="value">'https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js'</span>;
+document.head.appendChild(Prism);
+
+<span class="coment">// 🔄 Inicializar AOS após o carregamento do script</span>
+scriptAOS.onload = () => {
+    AOS.init({ duration: 500 });
+};
+        </pre>
+    </div>
+</div>
